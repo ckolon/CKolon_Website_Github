@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>CKolon™</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+      <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/ckolon.webflow.css" rel="stylesheet" type="text/css">
+      <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/popuo-box.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+<!--  <script type="text/javascript">WebFont.load({  google: {    families: ["Merriweather:300,300italic,400,400italic,700,700italic,900,900italic"]  }});</script>-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="https://use.typekit.net/vxr4xqs.js" type="text/javascript"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+</head>
+<body class="body">
+    
+    
+    
+    <!-- bootstrap-pop-up -->
+	<div class="modal video-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+                    
+                  
+					Sign In & Sign Up
+					<button type="button" class="close" data-toggle="modal" data-target="#myModal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+				</div>
+				<section>
+					<div class="modal-body">
+						<div class="w3_login_module">
+							<div class="module form-module">
+							  <div class="toggle"><i class="fas fa-edit"></i>
+								<div class="tooltip">Register</div>
+							  </div>
+							  <div class="form">
+								<h3>Login to your account</h3>
+								<form action="#" method="post">
+								  <input type="text" name="Username" placeholder="Username" required="">
+								  <input type="password" name="Password" placeholder="Password" required="">
+								  <input type="submit" value="Login">
+								</form>
+							  </div>
+							  <div class="form">
+								<h3>Create an account</h3>
+								<form action="#" method="post">
+								  <input type="text" name="Username" placeholder="Username" required="">
+								  <input type="password" name="Password" placeholder="Password" required="">
+								  <input type="email" name="Email" placeholder="Email Address" required="">
+								  <input type="text" name="Phone" placeholder="Phone Number" required="">
+								  <input type="submit" value="Register">
+								</form>
+							  </div>
+							  <div class="cta"><a href="#">Forgot your password?</a></div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+	<script>
+		$('.toggle').click(function(){
+		  // Switches the Icon
+		  $(this).children('i').toggleClass('fa-pencil');
+		  // Switches the forms  
+		  $('.form').animate({
+			height: "toggle",
+			'padding-top': 'toggle',
+			'padding-bottom': 'toggle',
+			opacity: "toggle"
+		  }, "slow");
+		});
+	</script>
+<!-- //bootstrap-pop-up -->
+    
+    
+  <div class="ckolon_top_menu">
+    <div class="ckolon_quick_links">
+      <div class="columns w-row">
+        <div class="column w-col w-col-6">
+          <a href="javascript:;" class="link-block w-inline-block">
+            <h5 class="top_links">Education</h5>
+          </a>
+          <a href="javascript:;" class="link-block-2 w-inline-block">
+            <h5 class="top_links">Community</h5>
+          </a>
+        </div>
+        <div class="column-7 w-col w-col-6">
+          <div class="div-block-13">
+              <a href="javascript:;" class="top_bt w-top"> <i class="fas fa-search"></i> Search</a>
+              <a href="javascript:;" class="top_bt w-top"> <i class="fas fa-user"></i> My Profile</a>
+              <a href="javascript:;" class="top_bt w-top"> <i class="fas fa-cart-plus"></i> 0 Items <span>$0.00</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="columns-6 w-row">
+      <div class="w-col w-col-6">
+          <div class="div-block"><a href="index.html"> <img src="images/Ckolon_logo.svg" alt="" class="image"></a></div>
+      </div>
+      <div class="top_right w-col w-col-6">
+        <div class="div-block-14">
+            <a href="#" data-toggle="modal" data-target="#myModal"  class="btn login_bt w-button"><i class="fas fa-sign-in-alt"></i> Signin / Signup</a>
+            <a href="javascript:;" type="button" class="btn help_bt w-button"><i class="fas fa-headset"></i> Help Desk</a>
+            
+<!--            <button  onclick="alert('Hello world!')" class="btn help_bt w-button"><i class="fas fa-headset"></i> Help Desk</button>-->
+<!--            <a href="javascript:;" class="help_bt w-button"></a>-->
+        </div>
+      </div>
+    </div>
+    <div data-collapse="medium" data-animation="default" data-duration="400" class="navbar w-nav">
+      <nav role="navigation" class="w-nav-menu"><a href="index.html" class="nav-link-4 w-nav-link">Home</a>
+        <div data-delay="0" data-hover="1" class="w-dropdown">
+          <div class="dropdown-toggle w-dropdown-toggle">
+            <div class="w-icon-dropdown-toggle"></div>
+            <div>Cloud Services</div>
+          </div>
+          <nav class="w-dropdown-list">
+              <a href="aws_landing.html" class="w-dropdown-link">Amazon Web Services</a>
+              <a href="javascript:;" class="w-dropdown-link">Microsoft Azure</a>
+              <a href=zoho.html class="w-dropdown-link">ZOHO</a>
+          </nav>
+        </div>
+        <div data-delay="0" data-hover="1" class="w-dropdown">
+          <div class="dropdown-toggle w-dropdown-toggle">
+            <div class="w-icon-dropdown-toggle"></div>
+            <div>IT Services</div>
+          </div>
+          <nav class="w-dropdown-list">
+              <a href="javascript:;" class="w-dropdown-link">Cloud Computing</a>
+              <a href="javascript:;" class="w-dropdown-link">Data Centre Design &amp; Setup</a>
+              <a href="javascript:;" class="w-dropdown-link">IT Helpdesk</a>
+              <a href="javascript:;" class="w-dropdown-link">Computer Hardware Services</a>
+              <a href="javascript:;" class="w-dropdown-link">Annual Maintenance Contract</a>
+              <a href="javascript:;" class="w-dropdown-link">Website Design &amp; Development</a>
+              <a href="javascript:;" class="w-dropdown-link">Mobile App Design &amp; Development</a>
+              <a href="javascript:;" class="w-dropdown-link">Link</a>
+              <a href="javascript:;" class="w-dropdown-link">Link</a>
+          </nav>
+        </div>
+        <a href="javascript:;" class="nav-link w-nav-link">Products</a>
+        <div data-delay="0" data-hover="1" class="w-dropdown">
+          <div class="dropdown-toggle w-dropdown-toggle w--current">
+            <div class="w-icon-dropdown-toggle"></div>
+            <div class="w--current"><strong>About CKolon</strong></div>
+          </div>
+          <nav class="w-dropdown-list w--current">
+              <a href="aboutus.html" class="w-dropdown-link">Company</a>
+              <a href="partners.html" class="w-dropdown-link">Business Partners</a>
+              <a href="javascript:;" class="w-dropdown-link">Team</a>
+              <a href="javascript:;" class="w-dropdown-link">Careers</a>
+          </nav>
+        </div>
+        <a href="javascript:;" class="nav-link-2 w-nav-link">News &amp; Media</a>
+        <a href="javascript:;" class="nav-link-3 w-nav-link">Blog</a>
+        <a href="javascript:;" class="nav-link-4 w-nav-link">Contact us</a>
+        </nav>
+    </div>
+  </div>
+  <div class="about_banner_section">
+          <div class="w-container-hero">
+            <div class="about_col-2 w-row">
+              <div class="w-col w-col-10">
+                <div class="div-block-2" style="color: white">
+                  <h1 class="heading">Welcome to CKolon</h1>
+                  <h2 class="sf_heading" style="font-weight: lighter;">Built for all your application. <br>AI Ready. Secure to the Core</h2>
+                    
+                  </div>
+              </div>
+            </div>
+          </div>
+  </div>
+    
+ <div class="about_us">
+    <h1 class="title_heading">What we do</h1>
+<!--      <h3 class="sf_heading"></h3>-->
+      <p class="sub_regular_content"> Unique and powerful suite of software to run your entire business, brought to you by a company <br>Unique and powerful suite of software to run your entire business, brought to you by a company Unique and brought to you <br>by a brought to you by a company Unique and brought to you by a  Unique and brought to you by CKolon</p>
+  </div>
+    
+    <br><br> <br><br>
+    
+<div class="our_motive">
+    <div class="columns-12 w-row">
+        <div class="w-col w-col-1"></div>
+      <div class="w-col w-col-5">
+          
+          <img src="images/ITservice-01.jpg" height="500" alt="" class="image-11">
+            
+        </div>
+      <div class="w-col w-col-5">
+            <h1  class="title_heading">Our Motive</h1>
+              <p  class="sub_regular_content" style="text-align: left;"> Unique and powerful suite of software to run your entire business, brought to you by a company Unique and powerful suite of software to run your entire business, brought to you by a company Unique and brought to you by a brought to you by a company Unique and brought to you by a  Unique and brought to you by CKolon</p>
+<!--
+              <a href="javascript:;" type="button" class="btn learn_bt w-button"> Learn more</a>
+              <a href="javascript:;" type="button" class="btn buy_bt w-button"> Buy now</a>            
+-->
+       
+        </div>
+    </div>
+  </div>
+    
+  
+  <div class="choose_section">
+    <h1 class="title_heading">Why Choose Us</h1>
+    <p class="sub_title">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, <br>when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      <br><br>
+    <div class="w-container">
+      <div class="w-row">
+        <div class="w-col w-col-3">
+          <div class="div-block-6 hoever_card"><img src="images/easy-setup.svg" height="100" alt="">
+            <h4 class="heading-3">Easy Setup</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p></div>
+        </div>
+        <div class="w-col w-col-3">
+          <div class="div-block-6 hoever_card"><img src="images/customizable.svg" height="100" alt="">
+            <h4 class="heading-3">Customize</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p></div>
+        </div>
+        <div class="w-col w-col-3">
+          <div class="div-block-6 hoever_card"><img src="images/support.svg" height="100" alt="">
+            <h4 class="heading-3">Support 24/7</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p></div>
+        </div>
+        <div class="w-col w-col-3">
+          <div class="div-block-6 hoever_card"><img src="images/friendly.svg" height="100" alt="">
+            <h4 class="heading-3">Friendly Staff</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    <div class="our_client">
+        <h1 class="title_heading">Our Client</h1>
+          <p class="sub_regular_content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, </p>   
+    </div>
+    <div data-animation="slide" data-duration="500" data-infinite="1" class="client_slider w-slider" style="background: #f2f2f2;">
+        
+      <div class="client_mask w-slider-mask">
+          
+        <div class="client_slide w-slide">
+            <div class="ck_client_sec">
+                
+              <div class="w-row">
+                <div class="w-col w-col-2">
+                  <div class="hoever_card">
+                  <img src="images/AWS_Logo.svg" height="100" alt="" class="image-11">
+                  </div>
+                </div>
+                <div class="w-col w-col-2">
+                  <div class="hoever_card">
+                  <img src="images/Azure_Logo.svg" height="100" alt="" class="image-11">
+                  </div>
+                </div>
+                <div class="w-col w-col-2">
+                  <div class="hoever_card">
+                  <img src="images/ZOHO_logo.svg" height="100" alt="" class="image-11">
+                  </div>
+                </div>
+                   <div class="w-col w-col-2">
+                  <div class="hoever_card">
+                  <img src="images/google-cloud-1.svg" height="100" alt="" class="image-11">
+                  </div>
+                </div>
+                   <div class="w-col w-col-2">
+                  <div class="hoever_card">
+                  <img src="images/alibaba-cloud-01.svg" height="100" alt="" class="image-11">
+                  </div>
+                </div>
+                  <div class="w-col w-col-2">
+                  <div class="hoever_card">
+                  <img src="images/IBM_logo.svg" height="100" alt="" class="image-11">
+                  </div>
+                </div>
+              </div>
+            </div> 
+        </div>
+          
+           <div class="client_slide w-slide">
+            <div class="ck_client_sec">
+                
+              <div class="w-row">
+                <div class="w-col w-col-2">
+                  <div class="hoever_card">
+                  <img src="images/AWS_Logo.svg" height="100" alt="" class="image-11">
+                  </div>
+                </div>
+                <div class="w-col w-col-2">
+                  <div class="hoever_card">
+                  <img src="images/Azure_Logo.svg" height="100" alt="" class="image-11">
+                  </div>
+                </div>
+                <div class="w-col w-col-2">
+                  <div class="hoever_card">
+                  <img src="images/ZOHO_logo.svg" height="100" alt="" class="image-11">
+                  </div>
+                </div>
+                   <div class="w-col w-col-2">
+                  <div class="hoever_card">
+                  <img src="images/google-cloud-1.svg" height="100" alt="" class="image-11">
+                  </div>
+                </div>
+                   <div class="w-col w-col-2">
+                  <div class="hoever_card">
+                  <img src="images/alibaba-cloud-01.svg" height="100" alt="" class="image-11">
+                  </div>
+                </div>
+                  <div class="w-col w-col-2">
+                  <div class="hoever_card">
+                  <img src="images/IBM_logo.svg" height="100" alt="" class="image-11">
+                  </div>
+                </div>
+              </div>
+            </div> 
+        </div>
+          
+      </div>
+      <div class="w-slider-arrow-left">
+        <div class="w-icon-slider-left"></div>
+      </div>
+      <div class="w-slider-arrow-right">
+        <div class="w-icon-slider-right"></div>
+      </div>
+      <div class="w-slider-nav w-round" style="padding-top: 5%;"></div>
+    </div>
+
+    
+  <br> <br>
+    <h1 class="title_heading">Ready to Give it a try</h1>
+    <div class="div-block-24"><a href="javascript:;" class="cl_bt w-button">Get Started</a></div>
+  <br> <br>
+  <div class="footer_section">
+    <div class="div-block-18">
+      <div class="w-row">
+        <div class="column-6 w-col w-col-3">
+          <div>
+            <h4 class="footer_title">CKolon</h4>
+            <p class="footer_text">CKolon™ IT Consulting Private Limited is a One Stop IT Solution Company as well as an Authorized Business Partner of major Global IT Brands, such as Microsoft, Amazon, IBM, Dell, ZOHO, Redington, Crayon and 140 more. It provides Consulting Services on Cloud Computing, ERP, Artificial Intelligence, Internet of Things, Operating Systems & Office, Software Development & Testing, Hardware Supply, Deployment & Service, Website Development, Mobile App Development & Annual Maintenance Contract.</p>
+          </div>
+        </div>
+        <div class="w-col w-col-3">
+          <div>
+            <h4 class="footer_title">Follow US</h4>
+            <p class="footer_text">CKolon IT Consulting Privated Limited is a One Stop IT Solution Company offering a broad range of Consulting Services on Cloud Computing, Data Centre Setup, Software Development and more.</p>
+          </div>
+            
+            <a href="https://goo.gl/ksoZxH"> <img src="images/google.svg" width="30" alt=""></a>
+            <a href="https://www.facebook.com/CKolonPL/ "> <img src="images/facebook.svg" width="30" alt="" class="image-9"></a>
+            <a href="https://twitter.com/CKolon_tweets "> <img src="images/twitter.svg" width="30" alt="" class="image-9"></a>
+            <a href="https://www.linkedin.com/company/ckolon/"> <img src="images/linkedin.svg" width="30" alt="" class="image-9"></a>
+        </div>
+        <div class="w-col w-col-2">
+          <div>
+            <h4 class="footer_title">Address</h4>
+            <p class="footer_text">CKolon IT Consulting Private Limited
+<br>Regus Eversun Business Centre
+<br>Ground Floor, E1 Block, Beech Building,
+<br>Manyata Embassy Business Park,
+<br>Nagavara , Karnataka,
+<br>Bangalore: 560 045, INDIA</p>
+          </div>
+<!--
+          <h4 class="footer_title_link"><a href="javascript:;" class="footer_contact_link">Sales</a></h4>
+          <h4 class="footer_title_link"><a href="javascript:;" class="footer_contact_link">Support</a></h4>
+-->
+        </div>
+          
+          <div class="w-col w-col-1">
+          <div>
+            <h4 class="footer_title">E-MAIL</h4>
+              
+              <ul class="w-list-unstyled" style="line-height: 20px;">
+              <li class="listt_link"><a href = "mailto: contact@ckolon.com" class="link-4">Enquiry</a></li>
+              <li class="listt_link"><a href = "mailto: sales@ckolon.com" class="link-4">Sales</a></li>
+              <li class="listt_link"><a href = "mailto: helpdesk@ckolon.com" class="link-4">Support</a></li>
+              </ul>
+          </div>
+<!--
+          <h4 class="footer_title_link"><a href="javascript:;" class="footer_contact_link">Sales</a></h4>
+          <h4 class="footer_title_link"><a href="javascript:;" class="footer_contact_link">Support</a></h4>
+-->
+        </div>
+          
+          <div class="w-col w-col-3">
+          <div>
+            <h4 class="footer_title">PHONE</h4>
+            <p class="footer_text">Mobile & Whtasapp : + 91 80738 64360 (24/7)
+<br>Bangalore Office:	+ 91 80427 64677
+<br>Office Hour: 8:30 AM to 6:00 PM
+<br>(IST/GMT/5,30) from Mon to Fri</p>
+          </div>
+<!--
+          <h4 class="footer_title_link"><a href="javascript:;" class="footer_contact_link">Sales</a></h4>
+          <h4 class="footer_title_link"><a href="javascript:;" class="footer_contact_link">Support</a></h4>
+-->
+        </div>
+      </div>
+    </div>
+    <div class="div-block-17">
+      <div class="w-row">
+        <div class="w-col w-col-2">
+          <div>
+            <h4 class="footer_title">Information </h4>
+            <ul class="w-list-unstyled">
+              <li class="listt_link"><a href="javascript:;" class="link-4">About Us</a></li>
+              <li class="listt_link"><a href="javascript:;" class="link-4">Information</a></li>
+              <li class="listt_link"><a href="javascript:;" class="link-4">Privacy Policy</a></li>
+              <li class="listt_link"><a href="javascript:;" class="link-4">Terms & Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-col w-col-2">
+          <div>
+            <h4 class="footer_title">Service </h4>
+            <ul class="w-list-unstyled">
+              <li class="listt_link"><a href="javascript:;" class="link-4">About Us</a></li>
+              <li class="listt_link"><a href="javascript:;" class="link-4">Information</a></li>
+              <li class="listt_link"><a href="javascript:;" class="link-4">Privacy Policy</a></li>
+              <li class="listt_link"><a href="javascript:;" class="link-4">Terms & Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-col w-col-2">
+          <div>
+            <h4 class="footer_title">Extras </h4>
+            <ul class="w-list-unstyled">
+              <li class="listt_link"><a href="javascript:;" class="link-4">About Us</a></li>
+              <li class="listt_link"><a href="javascript:;" class="link-4">Information</a></li>
+              <li class="listt_link"><a href="javascript:;" class="link-4">Privacy Policy</a></li>
+              <li class="listt_link"><a href="javascript:;" class="link-4">Terms & Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-col w-col-2">
+          <div>
+            <h4 class="footer_title">My Account </h4>
+            <ul class="w-list-unstyled">
+              <li class="listt_link"><a href="javascript:;" class="link-4">About Us</a></li>
+              <li class="listt_link"><a href="javascript:;" class="link-4">Information</a></li>
+              <li class="listt_link"><a href="javascript:;" class="link-4">Privacy Policy</a></li>
+              <li class="listt_link"><a href="javascript:;" class="link-4">Terms & Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-col w-col-2">
+          <div>
+            <h4 class="footer_title">Usefull Links </h4>
+            <ul class="w-list-unstyled">
+              <li class="listt_link"><a href="javascript:;" class="link-4">About Us</a></li>
+              <li class="listt_link"><a href="javascript:;" class="link-4">Information</a></li>
+              <li class="listt_link"><a href="javascript:;" class="link-4">Privacy Policy</a></li>
+              <li class="listt_link"><a href="javascript:;" class="link-4">Terms & Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-col w-col-2">
+          <div>
+            <h4 class="footer_title">Our Offers </h4>
+            <ul class="w-list-unstyled">
+              <li class="listt_link"><a href="javascript:;" class="link-4">About Us</a></li>
+              <li class="listt_link"><a href="javascript:;" class="link-4">Information</a></li>
+              <li class="listt_link"><a href="javascript:;" class="link-4">Privacy Policy</a></li>
+              <li class="listt_link"><a href="javascript:;" class="link-4">Terms & Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+          
+          
+      </div>
+    </div>
+    <div>
+        <hr class="hr1">
+        <div class="w-col-11 div-block-16">
+          <img src="images/003-paypal.svg" width="50" alt="">
+          <img src="images/american-express-logo.svg" width="50" alt="" class="image-10">
+          <img src="images/002-mastercard.svg" width="50" alt="" class="image-10">
+          <img src="images/001-visa.svg" width="50" alt="" class="image-10">
+            <span style="padding-left: 2%;">
+          <select>
+              <option value="English">English</option>
+              <option value="Hindi">Hindi</option>
+              <option value="French">French</option>
+          </select>
+        </span>
+            <span style="padding-left: 1%;">
+                <select>
+                  <option value="Indian Rupress">INR</option>
+                  <option value="US Dollar">USD</option>
+                  <option value="Euro">Euro</option>
+                </select>
+        </span>
+    </div>
+        </div>
+    </div>
+  <script src="https://d1tdp7z6w94jbb.cloudfront.net/js/jquery-3.3.1.min.js" type="text/javascript" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+</body>
+</html>
