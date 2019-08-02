@@ -51,7 +51,7 @@
 
 .nav-link-4 {
   padding-left: 0px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: proxima-nova, sans-serif;
 }
 
 .dropdown-toggle-4 {
@@ -73,7 +73,7 @@
 
 .container {
   padding-bottom: 0px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: proxima-nova, sans-serif;
 }
 
 .columns {
@@ -142,15 +142,15 @@
 .heading {
   padding-top: 0px;
   font-family: proxima-nova, sans-serif;
-  font-size: 56px;
+  font-size: 48px;
   font-weight: 700;
 }
 
 .paragraph {
   font-family: proxima-nova, sans-serif;
   color: #000;
-  font-size: 32px;
-  line-height: 44px;
+  font-size: 26px;
+  line-height: 34px;
   font-weight: lighter;
 }
 
@@ -254,14 +254,14 @@
 .columns-2 {
   margin-right: 0px;
   margin-left: 0px;
-  padding-top: 140px;
+  padding-top: 6%;
   padding-left: 10px;
 }
 
 .ck_cloud_services {
   padding: 20px 60px 40px;
 /*  border-bottom: 1px solid #f2f2f2;*/
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: proxima-nova, sans-serif;
 }
 
 .title_heading {
@@ -277,6 +277,19 @@
   margin-bottom: 0px;
   padding-right: 4%;
   padding-bottom: 4%;
+  padding-left: 4%;
+  border: 0px none transparent;
+  font-family: proxima-nova, sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.sub_data_content {
+  margin-bottom: 0px;
+  padding-right: 4%;
+  padding-bottom: 2%;
   padding-left: 4%;
   border: 0px none transparent;
   font-family: proxima-nova, sans-serif;
@@ -338,7 +351,7 @@
 .columns-3 {
   padding-right: 20px;
   padding-left: 10px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: proxima-nova, sans-serif;
 }
 
 .div-block-3 {
@@ -413,19 +426,21 @@
   font-weight: 100;
 }
 
+
+
 .learn_bt {
   border-style: solid;
   border-width: 2px;
-  border-color: hsla(189.33333333333331, 77.14%, 65.69%, 1.00);
-  background-color: hsla(208.00000000000003, 0.00%, 100.00%, 1.00);
+  border: 1px solid #3BCCE6;
+    background-color: #3BCCE6;
   font-family: proxima-nova, sans-serif;
-  color: hsla(189.33333333333331, 77.14%, 65.69%, 1.00);
+  color: #fff;
   font-weight: 600;
 }
 
 .learn_bt:hover {
-  background-color: hsla(188.67469879518072, 76.15%, 57.25%, 0.26);
-  color: hsla(188.67469879518072, 76.15%, 57.25%, 1.00);
+  background-color: #000;
+  border: 1px solid #000;
 }
 
 
@@ -434,21 +449,20 @@
   margin-left: 20px;
 /*  padding-left: 30px;*/
   border-style: solid;
-  border-width: 2px;
-  border-color: #f90;
-  background-color: #fff;
+      border: 1px solid #f90;
+    background-color: #f90;
 /*  background-image: url('../images/buy_now.png');*/
   background-position: 0% 50%;
   background-size: 35px;
   background-repeat: no-repeat;
   font-family: proxima-nova, sans-serif;
-  color: #f90;
+  color: #fff;
   font-weight: 600;
 }
 
 .buy_bt:hover {
-  background-color: hsla(36.06217616580311, 97.97%, 61.37%, 0.29);
-  color: #f90;
+  background-color: #000;
+  border: 1px solid #000;
 }
 
 .container-2 {
@@ -522,7 +536,7 @@ margin-bottom: 0px;
 .choose_section {
     padding-top: 20px;
   padding-bottom: 20px;
-  border: 1px solid #f2f2f2;
+/*  border: 1px solid #000;*/
 }
 
 .choose_section p.sub_title {
@@ -549,7 +563,7 @@ margin-bottom: 0px;
 .ck_client_sec {
   padding: 20px 60px 40px;
 /*  border-bottom: 1px solid #f2f2f2;*/
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: proxima-nova, sans-serif;
 }
 
 
@@ -642,7 +656,7 @@ margin-bottom: 0px;
   border-style: none none solid;
   border-width: 1px;
   border-color: #000 #000 #f2f2f2;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: proxima-nova, sans-serif;
 }
 
 .iot_content {

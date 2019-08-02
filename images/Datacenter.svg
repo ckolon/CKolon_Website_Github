@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1149.172" height="458.752" viewBox="0 0 1149.172 458.752">
+  <g id="Group_1414" data-name="Group 1414" transform="translate(-145 -1598)">
+    <g id="Group_1399" data-name="Group 1399" transform="translate(145 1598)">
+      <g id="Rectangle_782" data-name="Rectangle 782" fill="#f90" stroke="#707070" stroke-width="1">
+        <rect width="544.348" height="70" stroke="none"/>
+        <rect x="0.5" y="0.5" width="543.348" height="69" fill="none"/>
+      </g>
+      <g id="Rectangle_782-2" data-name="Rectangle 782" transform="translate(0 77.75)" fill="#f90" stroke="#707070" stroke-width="1">
+        <rect width="544.348" height="70" stroke="none"/>
+        <rect x="0.5" y="0.5" width="543.348" height="69" fill="none"/>
+      </g>
+      <g id="Rectangle_782-3" data-name="Rectangle 782" transform="translate(0 155.501)" fill="#f90" stroke="#707070" stroke-width="1">
+        <rect width="544.348" height="70" stroke="none"/>
+        <rect x="0.5" y="0.5" width="543.348" height="69" fill="none"/>
+      </g>
+      <g id="Rectangle_782-4" data-name="Rectangle 782" transform="translate(0 233.251)" fill="#f90" stroke="#707070" stroke-width="1">
+        <rect width="544.348" height="70" stroke="none"/>
+        <rect x="0.5" y="0.5" width="543.348" height="69" fill="none"/>
+      </g>
+      <g id="Rectangle_782-5" data-name="Rectangle 782" transform="translate(0 311.001)" fill="#f90" stroke="#707070" stroke-width="1">
+        <rect width="544.348" height="70" stroke="none"/>
+        <rect x="0.5" y="0.5" width="543.348" height="69" fill="none"/>
+      </g>
+      <g id="Rectangle_782-6" data-name="Rectangle 782" transform="translate(0 388.752)" fill="#f90" stroke="#707070" stroke-width="1">
+        <rect width="544.348" height="70" stroke="none"/>
+        <rect x="0.5" y="0.5" width="543.348" height="69" fill="none"/>
+      </g>
+    </g>
+    <g id="Rectangle_782-7" data-name="Rectangle 782" transform="translate(714.172 2056.578) rotate(-90)" fill="#3dcde7" stroke="#707070" stroke-width="1">
+      <rect width="457.752" height="100" stroke="none"/>
+      <rect x="0.5" y="0.5" width="456.752" height="99" fill="none"/>
+    </g>
+    <g id="Rectangle_782-8" data-name="Rectangle 782" transform="translate(834.172 2056.578) rotate(-90)" fill="#3dcde7" stroke="#707070" stroke-width="1">
+      <rect width="457.752" height="100" stroke="none"/>
+      <rect x="0.5" y="0.5" width="456.752" height="99" fill="none"/>
+    </g>
+    <g id="Rectangle_782-9" data-name="Rectangle 782" transform="translate(954.172 2056.752) rotate(-90)" fill="#3dcde7" stroke="#707070" stroke-width="1">
+      <rect width="457.752" height="100" stroke="none"/>
+      <rect x="0.5" y="0.5" width="456.752" height="99" fill="none"/>
+    </g>
+    <g id="Rectangle_782-10" data-name="Rectangle 782" transform="translate(1074.172 2056.752) rotate(-90)" fill="#3dcde7" stroke="#707070" stroke-width="1">
+      <rect width="457.752" height="100" stroke="none"/>
+      <rect x="0.5" y="0.5" width="456.752" height="99" fill="none"/>
+    </g>
+    <g id="Rectangle_782-11" data-name="Rectangle 782" transform="translate(1194.172 2056.578) rotate(-90)" fill="#3dcde7" stroke="#707070" stroke-width="1">
+      <rect width="457.752" height="100" stroke="none"/>
+      <rect x="0.5" y="0.5" width="456.752" height="99" fill="none"/>
+    </g>
+    <text id="Processes_Information_Application_End_User_Services_Application_Platform_Services_Core_infrastructure_Services_Physical_Components_Premises_HVAC_Entry_Location_" data-name="Processes / Information
+
+Application / End User Services
+
+Application Platform Services
+
+Core infrastructure Services
+
+Physical Components
+
+Premises (HVAC, Entry, Location)" transform="translate(417 1643)" fill="#fff" font-size="30" font-family="ProximaNova-Regular, Proxima Nova"><tspan x="-154.035" y="0">Processes / Information</tspan><tspan x="0" y="39"></tspan><tspan x="-205.77" y="78">Application / End User Services</tspan><tspan x="0" y="117"></tspan><tspan x="-191.685" y="156">Application Platform Services</tspan><tspan x="0" y="195"></tspan><tspan x="-182.445" y="234">Core infrastructure Services</tspan><tspan x="0" y="273"></tspan><tspan x="-141.75" y="312">Physical Components</tspan><tspan x="0" y="351"></tspan><tspan x="-213.765" y="390">Premises (HVAC, Entry, Location)</tspan></text>
+    <text id="Security_Availability_Scalability_Performances_Flexibility" data-name="Security
+
+Availability
+
+Scalability
+
+Performances
+
+Flexibility" transform="translate(774.545 1828) rotate(-90)" fill="#fff" font-size="30" font-family="ProximaNova-Regular, Proxima Nova"><tspan x="-53.01" y="0">Security</tspan><tspan x="0" y="60"></tspan><tspan x="-69.99" y="120">Availability</tspan><tspan x="0" y="180"></tspan><tspan x="-65.91" y="240">Scalability</tspan><tspan x="0" y="300"></tspan><tspan x="-90.915" y="360">Performances</tspan><tspan x="0" y="420"></tspan><tspan x="-60.765" y="480">Flexibility</tspan></text>
+  </g>
+</svg>
