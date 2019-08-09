@@ -424,6 +424,9 @@ background-image: url('../images/part_ban.jpg');
     width: 100%;
 }
 
+ul {
+    font-family: proxima-nova, sans-serif;
+}
 
 
 /* raj */
@@ -706,6 +709,74 @@ text-align: center;
     color: rgb(0, 0, 0);
   }
 
+.datacenter {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #fff;
+    
+}
+
+.datacenter_banner {
+  background-color: #ffff;
+background-image: url('../images/datacenter_banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.datacenter_title {
+    font-size: 28px;
+    line-height: 24px;
+    margin-top: 10px;
+    font-family: proxima-nova, sans-serif;
+}
+
+.datacenter_content {
+    font-family: proxima-nova, sans-serif;
+    font-size: 28px;
+    line-height: 40px;
+    padding-bottom: 2%;
+}
+
+.hardware_banner {
+  background-color: #ffff;
+background-image: url('../images/hardware.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.ithelpdesk_banner {
+  background-color: #ffff;
+background-image: url('../images/ithelpdesk.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.cloudcompute_banner {
+  background-color: #ffff;
+background-image: url('../images/cloudcompute.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.website_banner {
+  background-color: #ffff;
+background-image: url('../images/website.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.mobile_banner {
+  background-color: #ffff;
+background-image: url('../images/mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
   .div-block-6_zoho1{
 
     padding-bottom: 10px;
@@ -764,6 +835,10 @@ text-align: center;
 
 .clearfix {
   overflow: auto;
+}
+
+.pad-top2 {
+    padding-top: 2%;
 }
 
 .learn_bt_outzoho:hover {

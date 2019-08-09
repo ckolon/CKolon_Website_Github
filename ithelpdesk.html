@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>CKolon™</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+      <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/ckolon.webflow.css" rel="stylesheet" type="text/css">
+      <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/popuo-box.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+<!--  <script type="text/javascript">WebFont.load({  google: {    families: ["Merriweather:300,300italic,400,400italic,700,700italic,900,900italic"]  }});</script>-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="https://use.typekit.net/vxr4xqs.js" type="text/javascript"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+</head>
+<body class="body">
+    
+    
+    
+    <!-- bootstrap-pop-up -->
+	<div class="modal video-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+                    
+                  
+					Sign In & Sign Up
+					<button type="button" class="close" data-toggle="modal" data-target="#myModal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+				</div>
+				<section>
+					<div class="modal-body">
+						<div class="w3_login_module">
+							<div class="module form-module">
+							  <div class="toggle"><i class="fas fa-edit"></i>
+								<div class="tooltip">Register</div>
+							  </div>
+							  <div class="form">
+								<h3>Login to your account</h3>
+								<form action="#" method="post">
+								  <input type="text" name="Username" placeholder="Username" required="">
+								  <input type="password" name="Password" placeholder="Password" required="">
+								  <input type="submit" value="Login">
+								</form>
+							  </div>
+							  <div class="form">
+								<h3>Create an account</h3>
+								<form action="#" method="post">
+								  <input type="text" name="Username" placeholder="Username" required="">
+								  <input type="password" name="Password" placeholder="Password" required="">
+								  <input type="email" name="Email" placeholder="Email Address" required="">
+								  <input type="text" name="Phone" placeholder="Phone Number" required="">
+								  <input type="submit" value="Register">
+								</form>
+							  </div>
+							  <div class="cta"><a href="#">Forgot your password?</a></div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+	<script>
+		$('.toggle').click(function(){
+		  // Switches the Icon
+		  $(this).children('i').toggleClass('fa-pencil');
+		  // Switches the forms  
+		  $('.form').animate({
+			height: "toggle",
+			'padding-top': 'toggle',
+			'padding-bottom': 'toggle',
+			opacity: "toggle"
+		  }, "slow");
+		});
+	</script>
+<!-- //bootstrap-pop-up -->
+    
+    
+  <div class="ckolon_top_menu">
+    <div class="ckolon_quick_links">
+      <div class="columns w-row">
+        <div class="column w-col w-col-6">
+          <a href="javascript:;" class="link-block w-inline-block">
+            <h5 class="top_links">Education</h5>
+          </a>
+          <a href="javascript:;" class="link-block-2 w-inline-block">
+            <h5 class="top_links">Community</h5>
+          </a>
+        </div>
+        <div class="column-7 w-col w-col-6">
+          <div class="div-block-13">
+              <a href="javascript:;" class="top_bt w-top"> <i class="fas fa-search"></i> Search</a>
+              <a href="javascript:;" class="top_bt w-top"> <i class="fas fa-user"></i> My Profile</a>
+              <a href="javascript:;" class="top_bt w-top"> <i class="fas fa-cart-plus"></i> 0 Items <span>$0.00</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="columns-6 w-row">
+      <div class="w-col w-col-6">
+          <div class="div-block"><a href="index.html"> <img src="images/Ckolon_logo.svg" alt="" class="image"></a></div>
+      </div>
+      <div class="top_right w-col w-col-6">
+        <div class="div-block-14">
+            <a href="#" data-toggle="modal" data-target="#myModal"  class="btn login_bt w-button"><i class="fas fa-sign-in-alt"></i> Signin / Signup</a>
+            <a href="javascript:;" type="button" class="btn help_bt w-button"><i class="fas fa-headset"></i> Help Desk</a>
+            
+<!--            <button  onclick="alert('Hello world!')" class="btn help_bt w-button"><i class="fas fa-headset"></i> Help Desk</button>-->
+<!--            <a href="javascript:;" class="help_bt w-button"></a>-->
+        </div>
+      </div>
+    </div>
+    <div data-collapse="medium" data-animation="default" data-duration="400" class="navbar w-nav">
+      <nav role="navigation" class="w-nav-menu"><a href="index.html" class="nav-link-4 w-nav-link">Home</a>
+        <div data-delay="0" data-hover="1" class="w-dropdown">
+          <div class="dropdown-toggle w-dropdown-toggle">
+            <div class="w-icon-dropdown-toggle"></div>
+            <div>Cloud Services</div>
+          </div>
+          <nav class="w-dropdown-list">
+              <a href="aws_landing.html" class="w-dropdown-link">Amazon Web Services</a>
+              <a href="javascript:;" class="w-dropdown-link">Microsoft Azure</a>
+              <a href=zoho.html class="w-dropdown-link">ZOHO</a>
+          </nav>
+        </div>
+        <div data-delay="0" data-hover="1" class="w-dropdown">
+          <div class="dropdown-toggle w-dropdown-toggle">
+            <div class="w-icon-dropdown-toggle  w--current"></div>
+            <div><strong>IT Services</strong></div>
+          </div>
+          <nav class="w-dropdown-list w--current">
+                <a href="javascript:;" class="w-dropdown-link">Annual Maintenance Contract</a>
+                <a href="cloudcompute.html" class="w-dropdown-link">Cloud Computing</a>
+                <!-- <a href="hardware.html" class="w-dropdown-link">Computer Hardware Services</a>-->
+                <a href="datacenter.html" class="w-dropdown-link">Data Centre Design &amp; Setup</a>
+                <a href="mobile.html" class="w-dropdown-link">Mobile App Design &amp; Development</a>
+                <a href="ithelpdesk.html" class="w-dropdown-link">IT Helpdesk</a>
+                <a href="website.html" class="w-dropdown-link">Website Design &amp; Development</a>
+            </nav>
+        </div>
+        <a href="javascript:;" class="nav-link w-nav-link">Products</a>
+        <div data-delay="0" data-hover="1" class="w-dropdown">
+          <div class="dropdown-toggle w-dropdown-toggle">
+            <div class="w-icon-dropdown-toggle"></div>
+            <div class="w--current">About CKolon</div>
+          </div>
+          <nav class="w-dropdown-list">
+              <a href="aboutus.html" class="w-dropdown-link">Company</a>
+              <a href="partners.html" class="w-dropdown-link">Business Partners</a>
+              <a href="javascript:;" class="w-dropdown-link">Team</a>
+              <a href="javascript:;" class="w-dropdown-link">Careers</a>
+          </nav>
+        </div>
+        <a href="javascript:;" class="nav-link-2 w-nav-link">News &amp; Media</a>
+        <a href="javascript:;" class="nav-link-3 w-nav-link">Blog</a>
+        <a href="javascript:;" class="nav-link-4 w-nav-link">Contact us</a>
+        </nav>
+    </div>
+  </div>
+  <div class="ithelpdesk_banner">
+          <div class="w-container-hero">
+            <div class="about_col-2 w-row">
+              <div class="w-col w-col-10">
+                <div class="div-block-2" style="color: white">
+                  <h1 class="heading">IT Helpdesk Services</h1>
+                  <h2 class="sf_heading" style="font-weight: lighter;">Built for all your application. <br>AI Ready. Secure to the Core</h2>
+                    <a href="javascript:;" type="button" class="btn button-3 w-button">To get started today!</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+  </div>
+    
+ <div class="datacenter">
+    <h1 class="title_heading">IT Helpdesk Services</h1>
+<!--      <h3 class="sf_heading"></h3>-->
+      <p class="sub_data_content">Drive-by IT support requests driving you nuts? Lost in a “ticket tracking” nightmare? Keep on top of IT and make it easy for your users to track their IT needs. Go beyond ticketing: understand (and change!) team behavior… and capture your value to the business.</p>
+     
+     <h1 class="title_heading">What We Offer</h1>
+<!--      <h3 class="sf_heading"></h3>-->
+      <p class="sub_data_content">Our hardware supply and maintenance services cater to every possible technological need that an enterprise might have. We work with multiple reputed brands and source our products from reliable vendors, taking care to adhere to the strict tests and most stringent standards of quality that we pride ourselves on. Our services include:</p>
+     
+     <div class="our_motive">
+    <div class="columns-12 w-row">
+        <div class="w-col w-col-1"></div>
+      <div class="w-col w-col-10">
+                 <ul style="font-size: 24px; font-weight: 300;">
+         <li>Supply and installation of a variety of different kinds of desktop systems, workstations and servers, all sourced from popular international brands with proven reliability.</li>
+         <li>The supply and installation of enterprise grade Blade server technology.</li>
+         <li>Outsourcing of specific manpower and services according to the needs of particular projects.</li>
+         <li>Supply, deployment and maintenance of POS machines.</li>
+         <li>Comprehensive maintenance services for telephony systems including the option of all-encompassing annual maintenance contracts which address problems instantaneously and prevent downtime.</li>
+         <li>Comprehensive maintenance services for all important IT ingredients like desktop computers, servers, network components including LAN and WAN and user support systems.</li>
+         <li>Generation of periodic hardware health reports and recommendations regarding future upgrades.</li>
+         <li>Carrying out of proactive and preventive maintenance to alleviate escalated costs in the long run dealing with hardware problems of higher scale.</li>
+         <li>Rapid answer to emergency hardware service calls.</li>
+     </ul>
+     
+        </div>
+      
+    </div>
+  </div>
+    
+     
+     
+  </div>
+  
+  
+  <hr>
+  
+    
+    
+    
+    
+    <br>
+ <div class="aws_sec4">
+        <h1 class="title_heading">Ready to get started?</h1>
+          <h2 class="sub_regular_content">Our experts are here to help</h2> 
+     <from class="w-form">
+    
+         <div class="columns-12 w-row">
+             <div class="w-col w-col-2"></div>
+            
+             <div class="w-col w-col-4">
+                 
+                 <input class="w-input" type="text" name="firstname" placeholder="First Name" required>
+
+               </div>
+             <div class="w-col w-col-4">
+                 <input class="w-input" type="text" name="lastname" placeholder="Last Name" required>
+
+               </div>
+             <div class="w-col w-col-2"></div>
+             
+         </div>
+     <div class="columns-12 w-row">
+             <div class="w-col w-col-2"></div>
+            
+             <div class="w-col w-col-4">
+                 
+                 <input class="w-input" type="text" name="email" placeholder="Email" required>
+
+               </div>
+             <div class="w-col w-col-4">
+                 <input class="w-input" type="text" name="phone" placeholder="Phone" required>
+
+               </div>
+             <div class="w-col w-col-2"></div>
+             
+         </div>
+     
+     <div class="columns-12 w-row">
+             <div class="w-col w-col-2"></div>
+            
+             <div class="w-col w-col-4">
+                 
+                 <input class="w-input" type="text" name="comp" placeholder="Company Name" required>
+
+               </div>
+             <div class="w-col w-col-4">
+                 <select class="w-select">
+                     <option value="country" selected required>Country</option>
+  <option value="volvo">India</option>
+  <option value="saab">United States of America</option>
+  <option value="opel">United Kingdom</option>
+  <option value="audi">Middle East</option>
+                     <option value="audi">China</option>
+</select>
+
+               </div>
+             <div class="w-col w-col-2"></div>
+             
+         </div>
+         
+          <div class="columns-12 w-row">
+             <div class="w-col w-col-2"></div>
+            
+             <div class="w-col w-col-8">
+                 
+                <textarea class="w-textarea" rows="5" maxlength="250" placeholder="Enter text here..." style="width: 100%;"></textarea>
+                 
+                 
+                 
+
+               </div>
+             
+             <div class="w-col w-col-2"></div>
+             
+         </div>
+         
+         <div class="columns-12 w-row">
+             <div class="w-col w-col-2"></div>
+             <div class="w-col w-col-8" style="text-align: center; margin-top: 2%; padding-bottom: 2%;">
+                 <a href="javascript:;" type="button" class="btn button-2 w-button">SUBMIT</a>
+              </div>
+         </div>
+     </from>
+    </div>    
+    
+    <hr>
+    <div class="zoho_dial"  style="padding-bottom: 2%; margin-top: 2%;">
+        <h1 class="title_heading">Dial Us</h1>
+            
+            <a href="javascript:;" type="button" class="btn button w-button">Sales: 800-704-4058 (Toll-Free)</a>
+      </div>
+
+    
+    
+  <div class="footer_section">
+    <div class="div-block-18">
+      <div class="w-row">
+        <div class="column-6 w-col w-col-3">
+          <div>
+            <h4 class="footer_title">CKolon</h4>
+            <p class="footer_text">CKolon™ IT Consulting Private Limited is a One Stop IT Solution Company as well as an Authorized Business Partner of major Global IT Brands, such as Microsoft, Amazon, IBM, Dell, ZOHO, Redington, Crayon and 140 more. It provides Consulting Services on Cloud Computing, ERP, Artificial Intelligence, Internet of Things, Operating Systems & Office, Software Development & Testing, Hardware Supply, Deployment & Service, Website Development, Mobile App Development & Annual Maintenance Contract.</p>
+          </div>
+        </div>
+        <div class="w-col w-col-3">
+          <div>
+            <h4 class="footer_title">Follow US</h4>
+            <p class="footer_text">CKolon IT Consulting Privated Limited is a One Stop IT Solution Company offering a broad range of Consulting Services on Cloud Computing, Data Centre Setup, Software Development and more.</p>
+          </div>
+
+            <a href="https://goo.gl/ksoZxH"> <img src="images/google.svg" width="30" alt=""></a>
+            <a href="https://www.facebook.com/CKolonPL/ "> <img src="images/facebook.svg" width="30" alt="" class="image-9"></a>
+            <a href="https://twitter.com/CKolon_tweets "> <img src="images/twitter.svg" width="30" alt="" class="image-9"></a>
+            <a href="https://www.linkedin.com/company/ckolon/"> <img src="images/linkedin.svg" width="30" alt="" class="image-9"></a>
+        </div>
+        <div class="w-col w-col-2">
+          <div>
+            <h4 class="footer_title">Address</h4>
+            <p class="footer_text">CKolon IT Consulting Private Limited
+<br>Regus Eversun Business Centre
+<br>Ground Floor, E1 Block, Beech Building,
+<br>Manyata Embassy Business Park,
+<br>Nagavara, Karnataka,
+<br>Bangalore: 560 045, INDIA</p>
+          </div>
+<!--
+          <h4 class="footer_title_link"><a href="javascript:;" class="footer_contact_link">Sales</a></h4>
+          <h4 class="footer_title_link"><a href="javascript:;" class="footer_contact_link">Support</a></h4>
+-->
+        </div>
+
+          <div class="w-col w-col-1">
+          <div>
+            <h4 class="footer_title">E-MAIL</h4>
+
+              <ul class="w-list-unstyled" style="line-height: 20px;">
+              <li class="listt_link"><a href = "mailto: contact@ckolon.com" class="link-4">Enquiry</a></li>
+              <li class="listt_link"><a href = "mailto: sales@ckolon.com" class="link-4">Sales</a></li>
+              <li class="listt_link"><a href = "mailto: helpdesk@ckolon.com" class="link-4">Support</a></li>
+              </ul>
+          </div>
+<!--
+          <h4 class="footer_title_link"><a href="javascript:;" class="footer_contact_link">Sales</a></h4>
+          <h4 class="footer_title_link"><a href="javascript:;" class="footer_contact_link">Support</a></h4>
+-->
+        </div>
+
+          <div class="w-col w-col-3">
+          <div>
+            <h4 class="footer_title">PHONE</h4>
+            <p class="footer_text">Mobile & WhatsApp : +91 80738 64360 (24/7)
+<br>Bangalore Office:	+91 80 4276 4677
+<br>Office Hour: 8:30 AM to 6:00 PM
+<br>(IST/GMT/5:30) from Mon to Fri</p>
+          </div>
+<!--
+          <h4 class="footer_title_link"><a href="javascript:;" class="footer_contact_link">Sales</a></h4>
+          <h4 class="footer_title_link"><a href="javascript:;" class="footer_contact_link">Support</a></h4>
+-->
+        </div>
+      </div>
+    </div>
+    <div class="div-block-17">
+      <div class="w-row">
+        <div class="w-col w-col-2">
+          <div>
+            <h4 class="footer_title">PARTNERS </h4>
+            <ul class="w-list-unstyled">
+              <li class="listt_link"><a href="javascript:;" class="link-4">Hosting Providers</a></li>
+              <li class="listt_link"><a href="javascript:;" class="link-4">Consulting Partners</a></li>
+              <li class="listt_link"><a href="javascript:;" class="link-4">Platform Partners</a></li>
+              <li class="listt_link"><a href="javascript:;" class="link-4">Technology Partners</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-col w-col-2">
+          <div>
+            <h4 class="footer_title">SERVICES </h4>
+            <ul class="w-list-unstyled">
+              <li class="listt_link"><a href="cloudcompute.html" class="link-4">Cloud Services</a></li>
+              <li class="listt_link"><a href="ithelpdesk.html" class="link-4">IT Services</a></li>
+              <li class="listt_link"><a href="javascript:;" class="link-4">Products</a></li>
+              <li class="listt_link"><a href="javascript:;" class="link-4">Web and Mobile App Development</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-col w-col-2">
+          <div>
+            <h4 class="footer_title">RESOURCES </h4>
+            <ul class="w-list-unstyled">
+              <li class="listt_link"><a href="javascript:;" class="link-4">Education</a></li>
+              <li class="listt_link"><a href="javascript:;" class="link-4">Community</a></li>
+              <li class="listt_link"><a href="javascript:;" class="link-4">Blogs</a></li>
+              <li class="listt_link"><a href="javascript:;" class="link-4">News and Media</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-col w-col-2">
+          <div>
+            <h4 class="footer_title">WHAT’S NEW </h4>
+            <ul class="w-list-unstyled">
+              <li class="listt_link"><a href="javascript:;" class="link-4">Press</a></li>
+              <li class="listt_link"><a href="javascript:;" class="link-4">Events</a></li>
+              <li class="listt_link"><a href="javascript:;" class="link-4">CKolon in News</a></li>
+              <li class="listt_link"><a href="javascript:;" class="link-4">Tweets</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-col w-col-2">
+          <div>
+            <h4 class="footer_title">COMPANY </h4>
+            <ul class="w-list-unstyled">
+              <li class="listt_link"><a href="aboutus.html" class="link-4">About Us</a></li>
+              <li class="listt_link"><a href="javascript:;" class="link-4">Career</a></li>
+              <li class="listt_link"><a href="javascript:;" class="link-4">Privacy Policy</a></li>
+              <li class="listt_link"><a href="javascript:;" class="link-4">Terms & Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-col w-col-2">
+          <div>
+            <h4 class="footer_title">OUR OFFERS </h4>
+<!--
+            <ul class="w-list-unstyled">
+              <li class="listt_link"><a href="aboutus.html" class="link-4">About Us</a></li>
+              <li class="listt_link"><a href="javascript:;" class="link-4">Information</a></li>
+              <li class="listt_link"><a href="javascript:;" class="link-4">Privacy Policy</a></li>
+              <li class="listt_link"><a href="javascript:;" class="link-4">Terms & Conditions</a></li>
+            </ul>
+-->
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <div>
+        <hr class="hr1">
+        <div class="w-col-11 div-block-16">
+          <img src="images/003-paypal.svg" width="50" alt="">
+          <img src="images/american-express-logo.svg" width="50" alt="" class="image-10">
+          <img src="images/002-mastercard.svg" width="50" alt="" class="image-10">
+          <img src="images/001-visa.svg" width="50" alt="" class="image-10">
+            <span style="padding-left: 2%;">
+          <select>
+              <option value="English">English</option>
+              <option value="Hindi">Hindi</option>
+              <option value="French">French</option>
+          </select>
+        </span>
+            <span style="padding-left: 1%;">
+                <select>
+                  <option value="Indian Rupress">INR</option>
+                  <option value="US Dollar">USD</option>
+                  <option value="Euro">Euro</option>
+                </select>
+        </span>
+    </div>
+        </div>
+    </div>
+  <script src="https://d1tdp7z6w94jbb.cloudfront.net/js/jquery-3.3.1.min.js" type="text/javascript" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+</body>
+</html>
